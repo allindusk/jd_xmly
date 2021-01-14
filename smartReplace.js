@@ -162,8 +162,8 @@ function batchReplace() {
 //#region 文件下载
 
 async function downloader_jd() {
-    if (/require\(['"`]{1}.\/jdCookie.js['"`]{1}\)/.test(remoteContent))
-        await download("https://gitee.com/lxk0301/jd_scripts/raw/master/jdCookie.js", "./jdCookie.js", "京东Cookies");
+//     if (/require\(['"`]{1}.\/jdCookie.js['"`]{1}\)/.test(remoteContent))
+//         await download("https://gitee.com/lxk0301/jd_scripts/raw/master/jdCookie.js", "./jdCookie.js", "京东Cookies");
     if (remoteContent.indexOf("jdFruitShareCodes") > 0) {
         await download(
             "https://gitee.com/lxk0301/jd_scripts/raw/master/jdFruitShareCodes.js",
